@@ -1,0 +1,10 @@
+(executable (name Main) (modules (:standard \ PesyExampleSrcPesyModules))
+    (public_name Main.exe) (libraries pesy-example.src.pesy-modules)
+    (flags -open PesyExampleSrcPesyModules) (preprocess (pps lwt_ppx)))
+(library (public_name pesy-example.src.pesy-modules)
+    (name PesyExampleSrcPesyModules) (modules PesyExampleSrcPesyModules)
+    (libraries lwt lwt.unix) (preprocess (pps lwt_ppx)))
+(rule
+    (with-stdout-to PesyExampleSrcPesyModules.re
+        (run echo  "module Lwt = Lwt;\
+                  \nmodule LwtUnix = Lwt_unix;")))
