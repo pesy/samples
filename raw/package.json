@@ -1,0 +1,28 @@
+{
+  "name": "pesy-example",
+  "esy": {
+    "build": "dune build -p pesy-example"
+  },
+  "buildDirs": {
+    "src": {
+      "bin": "Main.re",
+      "rawBuildConfig": [
+        "(preprocess (pps lwt_ppx))"
+      ]
+    },
+    "share": {
+      "rawBuildConfigFooter": [
+        "(install (section share_root) (files (asset.txt as asset.txt)))"
+      ]
+    }
+  },
+  "scripts": {
+    "start": "esy x Main.exe"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "ocaml": "4.8.x",
+    "@opam/lwt_ppx": "*",
+    "@pesy/esy-pesy": "0.1.0-alpha.5"
+  }
+}

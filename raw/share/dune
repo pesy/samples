@@ -1,0 +1,3 @@
+(library (name PesyExampleShare) (public_name pesy-example.share)
+    (modules (:standard)))
+(install (section share_root) (files (asset.txt as asset.txt)))
