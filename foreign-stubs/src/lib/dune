@@ -1,0 +1,2 @@
+(library (name PesyExampleSrcLib) (public_name pesy-example.src.lib)
+    (modules (:standard)) (c_names is-prime sieve))

@@ -1,0 +1,9 @@
+(executable (name Main) (modules (:standard \ PesyExampleSrcPesyModules))
+    (public_name Main.exe) (libraries pesy-example.src.pesy-modules)
+    (flags -open PesyExampleSrcPesyModules))
+(library (public_name pesy-example.src.pesy-modules)
+    (name PesyExampleSrcPesyModules) (modules PesyExampleSrcPesyModules)
+    (libraries pesy-example.src.lib))
+(rule
+    (with-stdout-to PesyExampleSrcPesyModules.re
+        (run echo "module Library = PesyExampleSrcLib.Index;")))
