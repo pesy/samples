@@ -11,9 +11,15 @@
       ]
     },
     "src/lib": {
-      "cNames": [
-        "is-prime",
-        "sieve"
+      "foreignStubs": [
+        {
+          "language": "c",
+          "names": [
+            "is-prime",
+            "sieve"
+          ],
+          "flags": ["-lm"]
+        }
       ]
     }
   },
@@ -21,8 +27,11 @@
     "start": "esy x Main.exe"
   },
   "dependencies": {
-    "@opam/dune": "*",
+    "@opam/dune": "2.7.0",
     "ocaml": "4.8.x",
     "@pesy/esy-pesy": "0.1.0-alpha.5"
+  },
+  "resolutions": {
+    "@pesy/esy-pesy": "link:/home/melwyns/Desktop/workspace/pesy"
   }
 }
