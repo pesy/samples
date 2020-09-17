@@ -1,0 +1,37 @@
+{
+  "name": "pesy-example",
+  "esy": {
+    "build": "dune build -p pesy-example"
+  },
+  "buildDirs": {
+    "src": {
+      "bin": "Main.re",
+      "imports": [
+        "Library = require('./lib')"
+      ]
+    },
+    "src/lib": {
+      "foreignStubs": [
+        {
+          "language": "c",
+          "names": [
+            "is-prime",
+            "sieve"
+          ],
+          "flags": ["-lm"]
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "start": "esy x Main.exe"
+  },
+  "dependencies": {
+    "@opam/dune": "2.7.0",
+    "ocaml": "4.8.x",
+    "@pesy/esy-pesy": "0.1.0-alpha.5"
+  },
+  "resolutions": {
+    "@pesy/esy-pesy": "link:/home/melwyns/Desktop/workspace/pesy"
+  }
+}
