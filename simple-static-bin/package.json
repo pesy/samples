@@ -1,0 +1,22 @@
+{
+  "name": "pesy-example",
+  "esy": {
+    "build": "dune build -p pesy-example"
+  },
+  "buildDirs": {
+    "src": {
+      "bin": "Main.re",
+      "static": true,
+      "ocamloptFlags": ["-verbose"]
+    }
+  },
+  "scripts": {
+    "start": "esy x Main.exe"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "ocaml": "4.10.x",
+    "@pesy/esy-pesy": "*"
+  }
+}
+
