@@ -1,2 +1,4 @@
-(library (name PesyExampleMyOwnLib) (public_name pesy-example.my-own-lib)
-    (modules (:standard)))
+(library
+ (name PesyExampleMyOwnLib)
+ (public_name pesy-example.my-own-lib)
+ (modules (:standard)))
