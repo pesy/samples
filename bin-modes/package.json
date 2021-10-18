@@ -13,11 +13,15 @@
     }
   },
   "scripts": {
-    "start": "esy x Main.exe"
+    "start": "esy x pesy-example.src"
   },
   "dependencies": {
+    "@esy-ocaml/reason": "<4.0.0",
     "@opam/dune": "*",
-    "ocaml": "4.8.x",
-    "@pesy/esy-pesy": "0.1.0-alpha.5"
+    "ocaml": "4.12.x",
+    "@pesy/esy-pesy": "0.1.0-alpha.14"
+  },
+  "resolutions": {
+    "@esy-ocaml/reason": "EduardoRFS/reason:reason.json#35aa4df3de0daa60bdc1133dcf97855decac48f7"
   }
 }

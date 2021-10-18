@@ -27,8 +27,11 @@
     "start": "esy x Main.exe"
   },
   "dependencies": {
-    "@opam/dune": "2.7.0",
-    "ocaml": "4.8.x",
-    "@pesy/esy-pesy": "0.1.0-alpha.5"
+    "@opam/dune": "2.8.0",
+    "ocaml": "4.12.x",
+    "@pesy/esy-pesy": "0.1.0-alpha.14"
+  },
+  "resolutions": {
+    "@esy-ocaml/reason": "EduardoRFS/reason:reason.json#35aa4df3de0daa60bdc1133dcf97855decac48f7"
   }
 }

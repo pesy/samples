@@ -10,8 +10,9 @@
     "start": "esy x Main.exe"
   },
   "dependencies": {
+    "@esy-ocaml/reason": "<4.0.0",
     "@opam/dune": "*",
-    "ocaml": "4.8.x",
-    "@pesy/esy-pesy": "0.1.0-alpha.5"
+    "ocaml": "4.12.x",
+    "@pesy/esy-pesy": "0.1.0-alpha.14"
   }
 }

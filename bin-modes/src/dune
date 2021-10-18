@@ -1,2 +1,4 @@
-(library (name PesyExampleSrc) (public_name pesy-example.src)
-    (modules (:standard)))
+(executable
+ (name Main)
+ (public_name pesy-example.src)
+ (modules (:standard)))
