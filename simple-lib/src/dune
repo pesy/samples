@@ -1,1 +1,4 @@
-(executable (name Index) (modules (:standard)) (public_name Main.exe))
+(executable
+ (name Index)
+ (modules (:standard))
+ (public_name Main.exe))
