@@ -8,7 +8,7 @@
       "bin": "Main.re",
       "imports": [
         "Lwt = require('lwt')",
-  "LwtUnix = require('lwt/unix')"
+        "LwtUnix = require('lwt/unix')"
       ],
       "preprocess": [
         "pps",
@@ -28,6 +28,6 @@
     "@opam/lwt_ppx": "*"
   },
   "resolutions": {
-        "@esy-ocaml/reason": "github:reasonml/reason#ccc34729994b4a80d4f6274cc0165cd9113444d6"
+    "@esy-ocaml/reason": "github:reasonml/reason#ccc34729994b4a80d4f6274cc0165cd9113444d6"
   }
 }

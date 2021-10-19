@@ -22,6 +22,6 @@
     "@pesy/esy-pesy": "0.1.0-alpha.14"
   },
   "resolutions": {
-        "@esy-ocaml/reason": "github:reasonml/reason#ccc34729994b4a80d4f6274cc0165cd9113444d6"
+    "@esy-ocaml/reason": "github:reasonml/reason#ccc34729994b4a80d4f6274cc0165cd9113444d6"
   }
 }
