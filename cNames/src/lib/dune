@@ -1,2 +1,7 @@
-(library (name PesyExampleSrcLib) (public_name pesy-example.src.lib)
-    (modules (:standard)) (c_names my-stub1 my-stub-2))
+(library
+ (name PesyExampleSrcLib)
+ (public_name pesy-example.src.lib)
+ (modules (:standard))
+ (foreign_stubs
+  (language c)
+  (names my-stub1 my-stub-2)))

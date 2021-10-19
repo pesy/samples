@@ -1,2 +1,6 @@
-(executable (name Main) (modules (:standard)) (public_name Main.exe)
-    (preprocess (pps lwt_ppx)))
+(executable
+ (name Main)
+ (modules (:standard))
+ (public_name Main.exe)
+ (preprocess
+  (pps lwt_ppx)))
